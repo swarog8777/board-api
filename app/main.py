@@ -6,3 +6,5 @@ app = FastAPI()
 @app.get("/")
 def root():
     return {"Score": 10}
+
+#run
