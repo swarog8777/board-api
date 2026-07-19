@@ -5,10 +5,20 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
+    "alembic>=1.18.5",
+    "asyncpg>=0.31.0",
+    "bcrypt>=5.0.0",
     "fastapi[standard]>=0.139.0",
+    "psycopg2>=2.9.12",
+    "pydantic[email]>=2.13.4",
+    "pyjwt>=2.13.0",
+    "sqlalchemy[asyncio]>=2.0.51",
 ]
 
 [dependency-groups]
 dev = [
     "ruff>=0.15.20",
 ]
+
+[tool.ruff]
+line-length = 100
